@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..600&display=swap" rel="stylesheet">
+  <title>Чеклист</title>
+</head>
+<body>
+  <section class="checklist">
+    <div class="progress-bar">
+          <svg class="progress-bar__scale">
+            <circle cx="25" cy="25" r="29" class="progress-bar__circle progress-bar__circle_empty"></circle>
+            <circle cx="25" cy="25" r="29" class="progress-bar__circle progress-bar__circle_complete" style="stroke-dashoffset: calc(314 - 3.14 * 1)"></circle> <!--вместо цифры 1 можно ввести свой процент-->
+          </svg>
+          <span class="progress-bar__task-count">0/7</span>
+    </div>
+    <div class="checklist__container">
+      <div class="checklist__title-box">
+        <h2 class="checklist__title checklist-text">Чеклист</h2>
+      </div>
+      <p class="checklist__counter checklist-text">Выполнено: 0 из 7 действий</p>
+      <p class="checklist__next-action checklist-text">Следующее действие: Созвониться с клиентом до 23.05.24 12:00</p>
+    </div>
+    <button class="checklist__button checklist__button_white button">Открыть чеклист</button>
+  </section>
+</body>
+</html>
