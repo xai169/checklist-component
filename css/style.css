@@ -5,6 +5,7 @@
   --king-blue: #4777ED;
   --ghost-white: #F4F8FF;
   --tranparent-white: rgba(255, 255, 255, 0.5);
+  --progress-percent: 0%;
 }
 
 body {
@@ -66,8 +67,8 @@ body {
 }
 
 .progress-bar__circle_complete {
-  stroke-dashoffset: calc(314 - 3.14 * 1);
-  stroke-dasharray: 314;
+  stroke-dashoffset: calc(184 - (var(--progress-percent) / 100 * 184));
+  stroke-dasharray: 184;
   stroke-width: 2;
   stroke: var(--white);
 }
